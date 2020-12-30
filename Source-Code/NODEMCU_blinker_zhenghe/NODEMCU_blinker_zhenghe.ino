@@ -8,9 +8,9 @@
 
 SoftwareSerial mySerial(D6,D7);//RX=D6,TX=D7
 
-char auth[] = "0e3bf6e3a997";
-char ssid[] = "TP-LINK1";
-char pswd[] = "xsy001122";
+char auth[] = "key";//Blinker中获得的key the key obtained in blinker
+char ssid[] = "NAME";//你的wifi名称 your wifi name
+char pswd[] = "PASSWORD";//你的wifi密码 your wifi password
 
 char a='0';
 
