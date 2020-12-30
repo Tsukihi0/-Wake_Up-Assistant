@@ -11,10 +11,10 @@ int val=0;
 int R_val=0;
 
 
-const char *ssid="TP-LINK1";
-const char *password="xsy001122";
-const IPAddress serverIP(192,168,137,216);
-const int serverPort=8089;
+const char *ssid="NAME";//你的wifi名称 your wifi name
+const char *password="PASSWORD";//你的wifi密码 your wifi password
+const IPAddress serverIP(xxx,xxx,xxx,xxx);//你的服务器地址 the address of your server
+const int serverPort=xxxx;//你的服务器端口 the port of your server
 WiFiClient client;
 void setup() {
   // put your setup code here, to run once:
@@ -25,7 +25,7 @@ void setup() {
   WiFi.setSleepMode(WIFI_NONE_SLEEP);
 
   
-  WiFi.begin("TP-LINK1","xsy001122");
+  WiFi.begin("NAME","PASSWORD");//改 change this
   
   
   while (WiFi.status()!=WL_CONNECTED)
