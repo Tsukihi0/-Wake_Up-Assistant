@@ -3,8 +3,8 @@
 SoftwareSerial mySerial(D5,D6);//RX=D1,TX=D2
 
 
-const char *ssid="TP-LINK1";
-const char *password="xsy001122";
+const char *ssid="NAME";//你的wifi名称 your wifi name
+const char *password="PASSWORD";//你的wifi密码 your wifi password
 WiFiServer server(8089);
 
 
@@ -17,7 +17,7 @@ void setup() {
   WiFi.mode(WIFI_AP_STA);
   WiFi.setSleepMode(WIFI_NONE_SLEEP);
   
-  WiFi.begin("TP-LINK1","xsy001122");
+  WiFi.begin("NAME","");
   while(WiFi.status()!=WL_CONNECTED)
   {
     delay(500);
